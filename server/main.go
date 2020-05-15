@@ -1,7 +1,6 @@
 package main
 import (
-	"fmt"
-	"github.com/git-gonic/gin"
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
