@@ -1,0 +1,9 @@
+{
+    "name" : "Computer Science Courier",
+    "description" : "This app is about the test what CS student would do after college",
+    "repository" : "https://github.com/jinmyeonglee/go_lang_study",
+    "keywords" : ["go", "gin", "heroku", "courier"],
+    "addons" : [
+        "cleardb:ignite"
+    ]
+}
