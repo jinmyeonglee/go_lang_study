@@ -1,8 +1,9 @@
 package main
 import (
 	"github.com/gin-gonic/gin"
-	"router/init_routes.go"
+	"../routers"
 )
+// Fix import package problem
 
 var router *gin.Engine
 
@@ -11,6 +12,6 @@ func main() {
 	router.LoadHTMLGlob("pulic/templates/*")
 
 	initialize_routes()
-
+	println("asdf")
 	router.Run() // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
 }
