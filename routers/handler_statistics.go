@@ -1,4 +1,4 @@
-package db
+package routers
 
 import (
 	"bytes"
@@ -11,10 +11,9 @@ import (
     "time"
 
     "github.com/gin-gonic/gin"
-	_ "github.com/go-sql-driver/mysql"
 )
 
-func dbInit(db *sql.DB) gin.HandlerFunc {
+func showStats(db *sql.DB) gin.HandlerFunc {
     return func(c *gin.Context) {
         if _, err := db.Exec("CREATE TABLE IF NOT EXISTS ticks (tick timestamp)"); err != nil {
             c.String(http.StatusInternalServerError,
