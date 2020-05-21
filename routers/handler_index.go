@@ -7,8 +7,7 @@ import (
 )
 
 func show_indx_page(c * gin.Context) {
-	c.HTML(
-		http.StatusOK,
-
-	)
+	c.JSON(200, gin.H{
+		"message": "Hi~!",
+	})
 }

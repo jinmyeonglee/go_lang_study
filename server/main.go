@@ -1,6 +1,7 @@
 package main
 import (
 	"github.com/gin-gonic/gin"
+	"router/init_routes.go"
 )
 
 var router *gin.Engine
