@@ -3,12 +3,7 @@ package main
 type Question struct {
 	question string
 
-	choices []string
+	choices [4]string
 
 	selected int
-}
-
-func new_question() *Question {
-	q = Question{}
-
 }
